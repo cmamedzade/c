@@ -42,7 +42,16 @@ int itoh(int n)
             }
 
         }
-        a[i++] = s + '0';
+    
+    if (f >= A && f <= F)
+            {
+                a[i++] = s + 55;
+            }
+            else
+            {
+                a[i++] = s + '0';
+            }
+        
         if (bool == TRUE)
             a[i] = '-';
         a[++i] = '\0';
